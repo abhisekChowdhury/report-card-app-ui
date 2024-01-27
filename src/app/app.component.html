@@ -1,7 +1,48 @@
-Hi, this is the UI for the report card app
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
 
-<div *ngFor="let user of users">
-  <div>{{user.id}}</div>
-  <div>{{user.name}}</div>
-  <div>{{user.description}}</div>
-</div>
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>REPORT CARD APPLICATION</h1>
+
+  <h2>Users</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.description}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

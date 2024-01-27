@@ -28,6 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # report-card-app-ui
 
 
-REFERENCES - 
+## REFERENCES - 
 
-## Angular services - https://www.youtube.com/watch?v=Gx4iBLKLVHk
+- Angular services - https://www.youtube.com/watch?v=Gx4iBLKLVHk
