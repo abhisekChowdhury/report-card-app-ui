@@ -40,9 +40,24 @@
         <td>{{user.id}}</td>
         <td>{{user.name}}</td>
         <td>{{user.description}}</td>
+        <td>
+          <button (click)="deleteUser(user.id)">Delete</button>
+        </td>
       </tr>
     </tbody>
   </table>
+
+  <h2>Create User</h2>
+
+<form [formGroup]="userForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" formControlName="name" />
+
+  <label for="description">Description:</label>
+  <input type="text" id="description" formControlName="description" />
+
+  <button type="button" (click)="createUser()">Create User</button>
+</form>
 
 </body>
 </html>

@@ -21,13 +21,14 @@ export class UserService {
       return this.http.post<User>(`${this.apiServerUrl}/user`, user);
     }
 
+    public deleteUser(userId: any): Observable<void> {
+      return this.http.delete<void>(`${this.apiServerUrl}/user/${userId}`);
+    }
+
     /*
     public updateEmployee(user: User): Observable<User> {
       return this.http.put<User>(`${this.apiServerUrl}/user`, user);
     }
-
-    public deleteEmployee(employeeId: number): Observable<void> {
-      return this.http.delete<void>(`${this.apiServerUrl}/user${userId}`);
-    }
     */
+    
 }
